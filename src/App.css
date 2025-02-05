@@ -1,0 +1,153 @@
+/* Resetowanie marginesów i ustawienie czarnego tła */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+/* Główna struktura aplikacji */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Nagłówek */
+.header {
+  background-color: #222;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Główna sekcja */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Odtwarzacz radia */
+.radio-player {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+
+/* Wyświetlanie daty i godziny */
+.date-time {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Stopka */
+.footer {
+  background-color: #222;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Styl przycisku */
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+/* Efekt hover dla przycisku */
+button:hover {
+  background-color: #45a049;
+}
+
+/* ------------------- */
+
+select {
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* ------------------- */
+
+.browser-info {
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.browser-info h3 {
+  margin-top: 0;
+}
+
+.browser-info p {
+  margin: 5px 0;
+}
+
+/* ----------------------- */
+
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #222;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.cookie-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cookie-content p {
+  margin: 0;
+  flex: 1;
+}
+
+.cookie-content a {
+  color: #4CAF50;
+}
+
+.cookie-content button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+}
